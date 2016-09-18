@@ -40,14 +40,15 @@ def login(username,password):
     links=fbbrowser.get_links()
     for link in links:
         if(link.text=='Chat'):
-            print("Login success...")
+            dbg("Login success...")
             return 0
     dbg("login failure...")
     return 1
 
 
-def postfb("message"):
     
 
 
 if __name__ == '__main__':
+
+    login(usn,pas)
